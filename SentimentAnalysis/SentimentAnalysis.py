@@ -9,7 +9,6 @@ Created on Sun Aug 23 21:02:55 2020
 from tensorflow.keras.layers import Input,Dense,LSTM,Embedding
 from tensorflow.keras.models import Model
 from tensorflow.keras.preprocessing.text import text_to_word_sequence
-from tensorflow.keras.preprocessing.text import Tokenizer
 import numpy as np
 import tensorflow as tf
 import re
