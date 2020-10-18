@@ -113,7 +113,6 @@ class SentimentAnalysis:
     
     def trainModel(self,vocabCount):
         inputLayer = Input(shape=(None,vocabCount))
-        embeddingLayer = Embedding(vocabCount,vocabCount,input_length=self.maxLengthOfSentence)
         lstmLayer = LSTM(128)(inputLayer)
         output = Dense(1,activation='sigmoid')(lstmLayer)
         self.model = Model(inputLayer,output)
